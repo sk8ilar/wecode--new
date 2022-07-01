@@ -1,0 +1,91 @@
+
+body{background: linear-gradient(-75deg, rgb(228, 156, 67) 30%, rgba(0,0,0,0) 30%), linear-gradient(15deg, rgb(128, 216, 228) 65%, rgb(115, 64, 192) 65%);
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;}
+
+/* 상단 */
+
+.menu * {
+    display:inline;
+    height: 120px;
+}
+
+.menu li {
+    margin: 60px;
+}
+
+.menu li a {
+    color: gold;}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    font-size: 25px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;}
+
+.menu>ul>li>a:hover{color:white;}
+    
+/*page 1*/
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin:200px 100px 100px 100px;
+    
+}
+#picture{
+    width: 45%;
+    margin-right: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.introduction>h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    margin-bottom: 70px;
+    font-style: italic;
+    color:darkblue;
+}
+.introduction>p{
+    font-family: 'Pretendard-Thin';
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    color:darkblue;}
+   
+.backend{position: relative;
+    display:inline-block;}
+
+.backend::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top:0;
+    right:-15px;
+    width:4px;
+    height:100%;
+    background-color:darkblue;
+}
+.backend.active::after{
+    display:none;
+}
+
+
+
+
+
+
+
